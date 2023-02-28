@@ -34,7 +34,7 @@ class Code39(Barcode):
 
     name = "Code 39"
 
-    def __init__(self, code: str, writer=None, add_checksum: bool = True):
+    def __init__(self, code: str, writer=None, add_checksum: bool = False):
         r"""
         :param code: Code 39 string without \* and without checksum.
         :param writer: A ``barcode.writer`` instance used to render the barcode
